@@ -31,7 +31,7 @@ const TodoItem: React.FC<TodoItemProps> = ({
     <ItemsBox>
       <ButtonBox
         onClick={() => handleClick()}
-        green={green}
+         green={green}
         width
         rounded
         plSmall

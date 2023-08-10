@@ -50,7 +50,7 @@ const TodoList: React.FC<TodoListProps> = ({
           }}
         >
           {' '}
-          <div style={{}}>You don't have any tasks here</div>
+          <div>You do not have any tasks here</div>
         </div>
       )}
     </>

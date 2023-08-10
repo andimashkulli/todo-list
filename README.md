@@ -24,12 +24,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## The architecture of this project
 
 I have created the todo-list application by seperating it into the components including two main buttons(Edit button, and Delete button).
+
 The website is seperated into two parts:
+
+
 ## 1.Input Box
-## 2.Todo Box
 
 1. Input box has the input to type the task and the add button that has the addTodo function from Zustand.
-   
+
+## 2.Todo Box
+ 
 2.Todo Box contains the parent div that holds each mapped todo item.
 Delete button and Edit button is made using the modal design.
 

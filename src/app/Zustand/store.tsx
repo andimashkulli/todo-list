@@ -3,7 +3,7 @@ import { persist } from 'zustand/middleware';
 export interface Todo {
   id: number;
   text: String;
-  completed: Boolean;
+  completed: boolean;
 }
 
 interface Store {

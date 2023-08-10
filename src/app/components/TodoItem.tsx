@@ -3,9 +3,9 @@ import { ItemBox, ItemsBox, Item, ButtonBox } from '../styles/styles';
 import { BsCheckCircle } from 'react-icons/bs';
 import DeleteButton from '../components/DeleteButton';
 import EditButton from '../components/EditButton';
-import { Todo } from '../Zustand/store';
+
 interface TodoItemProps {
-  todos: Todo[];
+  todos: any;
   toggleTodo: (id: number) => void;
   removeTodo: (id: number) => void;
 }

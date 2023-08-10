@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoItem from './TodoItem';
 import dynamic from 'next/dynamic';
-import { todo } from 'node:test';
+
 interface Todo {
   id: Number;
   text: String;

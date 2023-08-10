@@ -15,7 +15,7 @@ interface Store {
 }
 
 const useStore = create<Store>()(
-    persist(
+    
         (set) => ({
           todos: [],
           addTodo: (text) =>
@@ -40,10 +40,8 @@ const useStore = create<Store>()(
             }));
           },
         }),
-        {
-          name: 'global', getStorage:() => localStorage
-        },
-      ),
+       
+      
 );
 
 export default useStore;

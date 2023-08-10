@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Box,
   InputBox,
@@ -22,7 +22,6 @@ function Main() {
   const toggleTodo = useStore((state) => state.toggleTodo);
   const [list, setList] = useState('all');
   const [inputEvent, setInputEvent] = useState('');
-  const [completed, setCompleted] = useState(false);
   const filterTodos = todos.filter((todo) => {
     if (list === 'all') {
       return true;
@@ -71,11 +70,9 @@ function Main() {
         </ButtonDiv>
       </FlexBox>
       <TodoList
-        isCompleted={completed}
         filterTodos={filterTodos}
         toggleTodo={toggleTodo}
         removeTodo={removeTodo}
-        todos={todos}
       />
     </Box>
   );

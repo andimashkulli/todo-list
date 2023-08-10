@@ -45,7 +45,6 @@ Zustand holds the main functions to control the state by deleting it, updating i
 
 
 - your feedback and contributions are welcome!
-- King Regards,
-- Andi
+- King Regards, Andi
 
 

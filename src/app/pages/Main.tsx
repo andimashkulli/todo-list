@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Box,
   InputBox,
@@ -20,18 +20,21 @@ function Main() {
   const addTodo = useStore((state) => state.addTodo);
   const removeTodo = useStore((state) => state.removeTodo);
   const toggleTodo = useStore((state) => state.toggleTodo);
+  const[todo,setTodo] = useState([]);
   const [list, setList] = useState('all');
   const [inputEvent, setInputEvent] = useState('');
-  const filterTodos = todos.filter((todo) => {
+  const filterTodos = todo.filter((Todos) => {
     if (list === 'all') {
       return true;
     } else if (list === 'completed') {
-      return todo.completed;
+      return Todos.completed;
     } else {
-      return !todo.completed;
+      return !Todos.completed;
     }
   });
-
+useEffect(() => {
+setTodo(todos)
+},[todos])
   const AddTodo = () => {
     addTodo(inputEvent);
   };

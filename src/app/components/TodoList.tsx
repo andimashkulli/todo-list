@@ -9,25 +9,20 @@ interface Todo {
 }
 
 interface TodoListProps {
-  todos: Todo[];
   toggleTodo: (id: number) => void;
   removeTodo: (id: number) => void;
-  isCompleted: Boolean;
   filterTodos: any;
-  isCompleted: Boolean;
 }
 
 const TodoList: React.FC<TodoListProps> = ({
-  todos,
   toggleTodo,
   removeTodo,
   filterTodos,
-  isCompleted,
 }) => {
   return (
     <>
       {filterTodos.length > 0 ? (
-        filterTodos.map((todo) => {
+        filterTodos.map((todo:any) => {
           return (
             <>
               <TodoItem
@@ -49,7 +44,7 @@ const TodoList: React.FC<TodoListProps> = ({
             paddingTop: '100px',
           }}
         >
-          {' '}
+        
           <div>You do not have any tasks here</div>
         </div>
       )}

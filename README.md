@@ -25,8 +25,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 I have created the todo-list application by seperating it into the components including two main buttons(Edit button, and Delete button).
 The website is seperated into two parts:
-1.Input Box
-2.Todo Box
+## 1.Input Box
+## 2.Todo Box
 
 1. Input box has the input to type the task and the add button that has the addTodo function from Zustand.
    

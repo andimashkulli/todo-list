@@ -41,7 +41,7 @@ const useStore = create<Store>()(
           },
         }),
         {
-          name: 'local-storage',
+          name: 'global', getStorage:() => localStorage
         },
       ),
 );

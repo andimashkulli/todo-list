@@ -1,6 +1,6 @@
 import React from 'react';
 import TodoItem from './TodoItem';
-import dynamic from 'next/dynamic';
+
 
 interface Todo {
   id: Number;
@@ -52,4 +52,4 @@ const TodoList: React.FC<TodoListProps> = ({
   );
 };
 
-export default dynamic(() => Promise.resolve(TodoList), { ssr: false });
+export default TodoList;
